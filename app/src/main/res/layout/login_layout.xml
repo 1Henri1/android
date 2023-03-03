@@ -7,34 +7,50 @@
     tools:context=".LoginActivity">
 
     <ImageView
+
         android:id="@+id/imgLogo"
         android:layout_width="150dp"
         android:layout_height="160dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
         android:src="@drawable/logo" />
 
     <EditText
         android:id="@+id/edtUsuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="INSIRA O NOME DO USUARIO" />
+        android:layout_below="@id/imgLogo"
+        android:layout_marginBottom="10dp"
+        android:hint="INSIRA O NOME DO USUARIO"
+        android:padding="10dp" />
 
     <EditText
         android:id="@+id/edtSenha"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="INSIRA SUA SENHA" />
+        android:layout_below="@id/edtUsuario"
+        android:hint="INSIRA SUA SENHA"
+        android:padding="10dp" />
 
     <Button
         android:id="@+id/btnEntrar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Entrar"
-        />
+        android:layout_below="@+id/edtSenha"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="25dp"
+        android:text="Entrar" />
 
     <Button
         android:id="@+id/btnSair"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/edtSenha"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="25dp"
+        android:layout_toRightOf="@id/btnEntrar"
         android:text="Sair" />
 
 
